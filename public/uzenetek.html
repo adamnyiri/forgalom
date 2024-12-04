@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Élelmiszer Eladási Adatfigyelő</title>
+        <link rel="stylesheet" type="text/css" href="css/fo1.css">
+    <body>
+        <header>          
+        </header>
+        <nav>
+            <ul>
+                <li><a href='index.html'>Főoldal</a></li>
+                <li><a href='adatbazis.html'>Adatbázis</a></li>
+                <li><a href='kapcsolat.html'>Kapcsolat</a></li>
+                <li><a href='uzenetek.html'>Üzenetek</a></li>
+            </ul>
+        </nav>
+        <aside>
+                <p>Termék információk: info@termekinfo.hu</p>
+        </aside>
+        <section>
+            <h1>Elküldött üzenetek</h1>
+            <form id="message-form">
+                <label for="name">ID:</label>
+                <input type="text" id="id" name="id"><br><br>
+                <label for="name">Név:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Üzenet:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+                <button type="submit">Mentés</button>
+              </form>
+              <div id="response"></div>
+            <table border="1">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Név</th>
+                    <th>Email</th>
+                    <th>Üzenet</th>
+                    <th>Küldés ideje</th>
+                    <th>Műveletek</th>
+                </tr>
+                </thead>
+                <tbody id="messages-table-body">
+                <!-- Az üzenetek itt jelennek meg -->
+                </tbody>
+            </table>
+
+            <script src="js/messages.js"></script>
+        </section>
+        <footer>&copy; Élelmiszer Eladási Adatfigyelő. All rights reserved. 2024</footer>
+    </body>
+</html>
