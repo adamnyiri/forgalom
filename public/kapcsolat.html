@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Élelmiszer Eladási Adatfigyelő</title>
+        <link rel="stylesheet" type="text/css" href="css/fo1.css">
+    <body>
+        <header>          
+        </header>
+        <nav>
+            <ul>
+                <li><a href='index.html'>Főoldal</a></li>
+                <li><a href='adatbazis.html'>Adatbázis</a></li>
+                <li><a href='kapcsolat.html'>Kapcsolat</a></li>
+                <li><a href='uzenetek.html'>Üzenetek</a></li>
+            </ul>
+        </nav>
+        <aside>
+                <p>Termék információk: info@termekinfo.hu</p>
+        </aside>
+        <section>
+            <h2>Kapcsolat</h2>
+            <form id="contact-form">
+              <label for="name">Név:</label><br>
+              <input type="text" id="name" name="name" required><br><br>
+              
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+              
+              <label for="message">Üzenet:</label><br>
+              <textarea id="message" name="message" rows="5" required></textarea><br><br>
+              
+              <button type="submit">Küldés</button>
+            </form>
+          
+            <div id="response"></div>
+          
+            <script src="js/contact.js"></script>
+        </section>
+        <footer>&copy; Élelmiszer Eladási Adatfigyelő. All rights reserved. 2024</footer>
+    </body>
+</html>
